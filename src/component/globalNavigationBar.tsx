@@ -1,15 +1,17 @@
+import Link from "next/link";
+
 export function GlobalNavigationBar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#040814]/75 backdrop-blur">
       <div className="mx-auto w-full max-w-3xl px-4 py-3">
         <div className="flex items-center justify-between gap-4">
           {/* Brand */}
-          <div className="min-w-0">
+          <Link href="/" className="min-w-0">
             <div className="text-sm font-semibold text-white">고음팩토리</div>
             <div className="text-xs text-white/60">
               대한민국에서 가장 쉬운 고음뚫기
             </div>
-          </div>
+          </Link>
 
           {/* Links (desktop) */}
           <nav className="items-center gap-2 flex">

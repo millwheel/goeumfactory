@@ -11,8 +11,8 @@ export function CurriculumBox() {
             구성
           </div>
           <div className="text-xs leading-relaxed text-white/70">
-            이 강의가 해결하는 것: 고음 발성의 원리 이해 · 실전 적용 루틴 습득
-            · 1:1 레슨으로 결과 고정
+            이 강의가 해결하는 것: 고음 발성의 원리 이해 · 실전 적용 루틴 습득 ·
+            1:1 레슨으로 결과 고정
           </div>
         </div>
       </div>
@@ -34,20 +34,6 @@ export function CurriculumBox() {
                 <div className="mt-2 flex items-start gap-2 text-sm leading-6 text-white/70">
                   <Dot />
                   <span className="min-w-0">{item.bullet}</span>
-                </div>
-
-                <div className="mt-3 h-px w-full bg-white/10" />
-
-                <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] text-white/60">
-                  <span className="rounded-md border border-white/10 bg-white/5 px-2 py-1">
-                    핵심 개념
-                  </span>
-                  <span className="rounded-md border border-white/10 bg-white/5 px-2 py-1">
-                    실습 포인트
-                  </span>
-                  <span className="rounded-md border border-white/10 bg-white/5 px-2 py-1">
-                    적용 루틴
-                  </span>
                 </div>
               </div>
             </div>

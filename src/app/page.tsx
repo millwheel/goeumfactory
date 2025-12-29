@@ -5,14 +5,11 @@ import { Emphasis } from "@/component/emphsis";
 import { SectionTitle } from "@/component/sectionTitle";
 import { CurriculumBox } from "@/component/curriculumBox";
 import { GlobalNavigationBar } from "@/component/globalNavigationBar";
-import { FeatureCard } from "@/component/featureCard";
 import { Contact } from "@/component/contact";
 import { Reveal } from "@/component/Reveal";
-import { SectionShell } from "@/component/SectionShell";
 import { StoryBlock } from "@/component/StoryBlock";
 import { ClaimRow } from "@/component/ClaimRow";
 import { Quote } from "@/component/Quote";
-import { PricingCTA } from "@/component/PricingCTA";
 
 export default function HomePage() {
   return (
@@ -23,20 +20,34 @@ export default function HomePage() {
       <section className="mx-auto w-full max-w-3xl px-4 pb-10 pt-10 md:pb-14 md:pt-14">
         <div className="space-y-8">
           <Reveal>
-            <h1 className="text-4xl font-black tracking-tight md:text-6xl">
-              대한민국에서 가장 쉬운 고음뚫기
-            </h1>
-          </Reveal>
-
-          <Reveal delay={0.1}>
-            <div className="space-y-3 text-base leading-8 text-white/80 md:text-lg">
-              <p>무슨 짓을 해도 어떤 선생님을 찾아가도</p>
-              <p>
-                <Emphasis>고음이 뚫리지 않는다면…</Emphasis>
-              </p>
-              <p className="font-semibold text-white">잘 찾아오셨습니다</p>
+            <div className="text-center mb-6 md:mb-10">
+              <h1 className="text-3xl font-black tracking-tight md:text-5xl">
+                대한민국에서 가장 쉬운 고음뚫기
+              </h1>
             </div>
           </Reveal>
+
+          <div className="space-y-6 text-center text-base leading-8 text-white/80 md:text-lg">
+            <Reveal delay={0.5}>
+              <p>무슨 짓을 해도</p>
+            </Reveal>
+
+            <Reveal delay={1}>
+              <p>어떤 선생님을 찾아가도</p>
+            </Reveal>
+
+            <Reveal delay={1.5}>
+              <p>
+                <Emphasis>고음이 뚫리지 않는다면</Emphasis>
+              </p>
+            </Reveal>
+
+            <Reveal delay={2}>
+              <p className="font-semibold text-lg md:text-xl text-white">
+                잘 찾아오셨습니다
+              </p>
+            </Reveal>
+          </div>
 
           <Reveal delay={0.2}>
             <div className="space-y-6 pt-4">
@@ -63,7 +74,7 @@ export default function HomePage() {
                       대표원장 조승희
                     </div>
                     <div className="text-sm text-white/70">
-                      '고음 잘뚫기'로 증명된 트레이너
+                      &#39;고음 잘뚫기&#39;로 증명된 트레이너
                     </div>
                   </div>
                 </div>
@@ -79,10 +90,13 @@ export default function HomePage() {
       </section>
 
       {/* Proof */}
-      <SectionShell id="proof" tone={1}>
+      <section
+        id="proof"
+        className="mx-auto w-full max-w-3xl px-4 py-14 md:py-20"
+      >
         <Reveal>
           <SectionTitle
-            kicker="Before/After"
+            kicker="Before & After"
             title="'안 되던 고음'이 '되게 만드는' 근거"
             desc="타고난 사람이 아니라, 안 되던 사람이 뚫어낸 방식으로."
           />
@@ -94,16 +108,14 @@ export default function HomePage() {
               index="01"
               claim="저는 최고음역 2옥타브 솔# 고음불가였습니다"
               evidence={
-                <>
+                <p>
                   위 영상에서 보셨듯 저는 최고음역{" "}
                   <Emphasis>2옥타브 솔# 고음불가</Emphasis> 였습니다. 오죽하면
-                  친구가 "넌 고음이 안되니까 그냥 랩을 해봐" 라는 말을 들을
-                  정도였으니까요.
-                  <div className="mt-3 text-white/70">
-                    하지만 지금은 예전엔 꿈도 못꾸던 노래들을 시원시원하게 부를
-                    수 있게 되었습니다. 박효신 · 이진성 · 이수 · 더크로스까지.
-                  </div>
-                </>
+                  친구가 &#34;넌 고음이 안되니까 그냥 랩을 해봐&#34; 라는 말을
+                  들을 정도였으니까요. 하지만 지금은 예전엔 꿈도 못꾸던 노래들을
+                  시원시원하게 부를 수 있게 되었습니다. 박효신 · 이진성 · 이수 ·
+                  더크로스까지.
+                </p>
               }
             />
           </Reveal>
@@ -123,12 +135,12 @@ export default function HomePage() {
                 <>
                   고음을 진짜 뚫을 수 있는 커리큘럼을 가진 트레이너의 첫번째
                   조건이 있습니다.{" "}
-                  <Emphasis>'고음이 타고나지 않은 트레이너'</Emphasis>
+                  <Emphasis>&#39;고음이 타고나지 않은 트레이너&#39;</Emphasis>
                   <div className="mt-3 text-white/70">
                     고음이 타고났다면 커리큘럼 개발 난이도가 기하급수적으로
-                    올라갑니다. 처음엔 타고나지 않음에 좌절했지만, 지금은 누구라도
-                    시원하게 고음을 뚫어줄 수 있는 트레이너가 된 것에 감사하고
-                    있습니다.
+                    올라갑니다. 처음엔 타고나지 않음에 좌절했지만, 지금은
+                    누구라도 시원하게 고음을 뚫어줄 수 있는 트레이너가 된 것에
+                    감사하고 있습니다.
                   </div>
                 </>
               }
@@ -142,17 +154,15 @@ export default function HomePage() {
             />
           </Reveal>
 
-          <Reveal delay={0.3}>
-            <Quote>단연 대한민국 최고의 고음강의일 겁니다.</Quote>
-          </Reveal>
+          <Quote>단연 대한민국 최고의 고음강의일 겁니다.</Quote>
         </div>
-      </SectionShell>
+      </section>
 
       {/* 1억 케이스 */}
-      <SectionShell tone={0}>
+      <section className="mx-auto w-full max-w-3xl px-4 py-14 md:py-20">
         <Reveal>
           <SectionTitle
-            kicker="사례"
+            kicker="사례1"
             title="보컬레슨에 1억원 넘게 쓰고 온 수강생"
             desc="오프라인 1억을 썼지만, 온라인 레슨만으로 단 4개월의 결과."
           />
@@ -175,21 +185,15 @@ export default function HomePage() {
                 </>
               }
             />
-          </Reveal>
-
-          <Reveal delay={0.2}>
             <StoryBlock
               body={
                 <>
-                  다른 사람보다 굉장히 큰 힘과 방향성의 특이케이스 레슨생이었지만,
-                  제가 타고나지 않아 더 넓은 바운더리의 수강생을 공감할 수 있었던
-                  부분이 결과를 내는데 큰 도움이 되었습니다.
+                  다른 사람보다 굉장히 큰 힘과 방향성의 특이케이스
+                  레슨생이었지만, 제가 타고나지 않아 더 넓은 바운더리의 수강생을
+                  공감할 수 있었던 부분이 결과를 내는데 큰 도움이 되었습니다.
                 </>
               }
             />
-          </Reveal>
-
-          <Reveal delay={0.25}>
             <StoryBlock
               body={
                 <>
@@ -200,20 +204,17 @@ export default function HomePage() {
               }
             />
           </Reveal>
-
-          <Reveal delay={0.3}>
-            <Quote>
-              절대적으로 BEFORE AFTER로 결과가 증명 된 곳만이 진짜입니다.
-            </Quote>
-          </Reveal>
+          <Quote>
+            절대적으로 BEFORE AFTER로 결과가 증명 된 곳만이 진짜입니다.
+          </Quote>
         </div>
-      </SectionShell>
+      </section>
 
       {/* 환불/보장 + 80대 */}
-      <SectionShell tone={2}>
+      <section className="mx-auto w-full max-w-3xl px-4 py-14 md:py-20">
         <Reveal>
           <SectionTitle
-            kicker="보장"
+            kicker="사례2"
             title="변화가 없다면 전액환불"
             desc="유료강의 포함 · 업계최초 1:1 무료레슨권 증정"
           />
@@ -224,14 +225,12 @@ export default function HomePage() {
             <StoryBlock
               body={
                 <>
-                  영상 자체도 뇌빼고 따라할 수 있을만큼 쉽게 제작했지만, 혹시모를
-                  변수마저도 1:1 레슨으로 확실하게 결과를 보장해드립니다.
+                  영상 자체도 뇌빼고 따라할 수 있을만큼 쉽게 제작했지만,
+                  혹시모를 변수마저도 1:1 레슨으로 확실하게 결과를
+                  보장해드립니다.
                 </>
               }
             />
-          </Reveal>
-
-          <Reveal delay={0.15}>
             <StoryBlock
               body={
                 <>
@@ -244,9 +243,6 @@ export default function HomePage() {
 
           <Reveal delay={0.2}>
             <div className="flex items-center gap-3">
-              <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-bold text-white">
-                80대 20분
-              </span>
               <p className="text-base font-medium text-white md:text-lg">
                 <Emphasis>80대</Emphasis> 수강생도 수강 20분만에 이해할 정도의
                 난이도입니다
@@ -263,20 +259,20 @@ export default function HomePage() {
 
           <Reveal delay={0.3}>
             <div className="space-y-5">
-              <Quote>고음이 안뚫리는게 불가능한 정도입니다.</Quote>
-              <p className="text-center text-2xl font-bold text-white md:text-3xl">
-                변화가 없을 시 전액환불
-              </p>
-              <p className="text-center text-sm text-white/70">
-                오죽하면 전액환불까지 당당하게 걸었을까요?
-              </p>
+              <Quote>
+                고음이 안뚫리는게 불가능한 정도입니다. 오죽하면 전액환불까지
+                당당하게 걸었을까요?
+              </Quote>
             </div>
           </Reveal>
         </div>
-      </SectionShell>
+      </section>
 
       {/* Curriculum */}
-      <SectionShell id="curriculum" tone={1}>
+      <section
+        id="curriculum"
+        className="mx-auto w-full max-w-3xl px-4 py-14 md:py-20"
+      >
         <Reveal>
           <SectionTitle
             kicker="커리큘럼"
@@ -288,10 +284,13 @@ export default function HomePage() {
         <Reveal delay={0.1}>
           <CurriculumBox />
         </Reveal>
-      </SectionShell>
+      </section>
 
       {/* Pricing & Contact */}
-      <SectionShell id="contact" tone={2}>
+      <section
+        id="contact"
+        className="mx-auto w-full max-w-3xl px-4 py-14 md:py-20 mb-10"
+      >
         <Reveal>
           <SectionTitle
             kicker="가격 · 문의"
@@ -313,18 +312,9 @@ export default function HomePage() {
                   할인가 29만원
                 </div>
 
-                <div className="text-4xl font-black tracking-tight text-white md:text-5xl">
+                <div className="text-2xl font-black tracking-tight text-white md:text-3xl">
                   프로모션 25만원
                 </div>
-              </div>
-
-              <p className="text-sm text-white/60">
-                카카오톡 문의 후 결제 안내
-              </p>
-
-              {/* CTA 버튼 */}
-              <div className="pt-4">
-                <PricingCTA />
               </div>
             </div>
           </Reveal>
@@ -334,7 +324,7 @@ export default function HomePage() {
             <Contact />
           </Reveal>
         </div>
-      </SectionShell>
+      </section>
 
       <footer className="border-t border-white/10 py-10">
         <div className="mx-auto w-full max-w-3xl px-4 text-center text-xs text-white/55">
