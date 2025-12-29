@@ -6,6 +6,7 @@ import { SectionTitle } from "@/component/sectionTitle";
 import { CurriculumBox } from "@/component/curriculumBox";
 import { GlobalNavigationBar } from "@/component/globalNavigationBar";
 import { FeatureCard } from "@/component/featureCard";
+import { Contact } from "@/component/contact";
 
 export default function HomePage() {
   return (
@@ -49,7 +50,7 @@ export default function HomePage() {
                 <div className="leading-tight">
                   <div className="text-sm font-semibold">대표원장 조승희</div>
                   <div className="text-xs text-white/70">
-                    수많은 Before/After로 ‘고음 잘뚫기’로 증명된 트레이너
+                    ‘고음 잘뚫기’로 증명된 트레이너
                   </div>
                 </div>
               </div>
@@ -204,7 +205,7 @@ export default function HomePage() {
       {/* Pricing & Contact (2열 제거 → 세로 스택) */}
       <section
         id="contact"
-        className="mx-auto w-full max-w-3xl px-4 py-10 md:py-14"
+        className="mx-auto w-full max-w-3xl px-4 py-10 md:py-14 space-y-6"
       >
         <SectionTitle
           kicker="가격 · 문의"
@@ -212,52 +213,11 @@ export default function HomePage() {
           desc="강의 구매를 희망하시는 분들은 아래 연락처 또는 카카오톡으로 문의주세요."
         />
 
-        <div className="mt-8 space-y-6">
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div className="text-sm font-semibold text-white">가격</div>
-            <div className="mt-4 space-y-2 text-sm text-white/80">
-              <div>
-                <span className="line-through text-white/50">49만원</span>{" "}
-                <span className="text-white/50">(X)</span>{" "}
-                <span className="font-semibold text-white">→ 29만원</span>
-              </div>
-              <div className="text-lg font-black text-white">
-                프로모션 할인가 → <span className="underline">25만원</span>
-              </div>
-            </div>
-
-            <div className="mt-6 rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-white/75">
-              <div className="font-semibold text-white">포함 혜택</div>
-              <ul className="mt-2 list-disc space-y-1 pl-5">
-                <li>변화 없을 시 전액환불 (유료강의 포함)</li>
-                <li>업계최초 1:1 무료레슨권 증정</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <div className="text-sm font-semibold text-white">문의</div>
-            <div className="mt-4 space-y-3 text-sm text-white/80">
-              <div className="rounded-xl border border-white/10 bg-[#020518]/40 p-4">
-                <div className="text-xs text-white/60">Kakao</div>
-                <div className="text-base font-semibold">kmkssik</div>
-              </div>
-
-              <div className="rounded-xl border border-white/10 bg-[#020518]/40 p-4">
-                <div className="text-xs text-white/60">TEL</div>
-                <div className="text-base font-semibold">01073445820</div>
-              </div>
-
-              <div className="pt-2 text-xs text-white/55">
-                * 버튼 클릭 기능(복사/바로가기)은 원하면 추가해줄게.
-              </div>
-            </div>
-          </div>
-        </div>
+        <Contact />
       </section>
 
       <footer className="border-t border-white/10 py-10">
-        <div className="mx-auto w-full max-w-3xl px-4 text-xs text-white/55">
+        <div className="mx-auto w-full max-w-3xl px-4 text-center text-xs text-white/55">
           © {new Date().getFullYear()} 고음팩토리. All rights reserved.
         </div>
       </footer>

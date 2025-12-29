@@ -3,7 +3,7 @@ import { CURRICULUM } from "@/data/curriculum";
 export function CurriculumBox() {
   return (
     <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.04] p-4 shadow-sm md:p-6">
-      {/* 상단 요약 바 (단색, 그라데이션 없음) */}
+      {/* 상단 요약 바 */}
       <div className="rounded-xl border border-white/10 bg-[#020518]/45 p-4">
         <div className="flex flex-col gap-2">
           <div className="text-sm font-semibold text-white">
@@ -13,7 +13,7 @@ export function CurriculumBox() {
         </div>
       </div>
 
-      {/* 리스트: 세로 스택 */}
+      {/* 리스트 */}
       <ol className="mt-5 space-y-3">
         {CURRICULUM.map((item) => (
           <li
@@ -51,7 +51,7 @@ export function CurriculumBox() {
         ))}
       </ol>
 
-      {/* 주의사항: 세로형 안내 카드 */}
+      {/* 주의사항 카드 */}
       <div className="mt-6 rounded-xl border border-white/10 bg-[#020518]/45 p-5">
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-2">
@@ -71,7 +71,7 @@ export function CurriculumBox() {
           없습니다.
         </div>
 
-        {/* 3-step: 가로 그리드 금지 → 세로 스택 */}
+        {/* 3-step */}
         <div className="mt-4 space-y-2">
           <div className="rounded-lg border border-white/10 bg-white/5 p-3">
             <div className="text-xs font-semibold text-white">Step 1</div>
