@@ -2,7 +2,8 @@
 
 export function Contact() {
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
+      {/* 버튼 영역 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {/* Kakao */}
         <button

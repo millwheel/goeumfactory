@@ -2,13 +2,17 @@ import { CURRICULUM } from "@/data/curriculum";
 
 export function CurriculumBox() {
   return (
-    <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.04] p-4 shadow-sm md:p-6">
+    <div className="mt-8 rounded-2xl border border-white/5 bg-white/[0.03] p-4 shadow-sm md:p-6">
       {/* 상단 요약 바 */}
       <div className="rounded-xl border border-white/10 bg-[#020518]/45 p-4">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-3">
           <div className="text-sm font-semibold text-white">
             커리큘럼 <span className="underline underline-offset-4">17강</span>{" "}
             구성
+          </div>
+          <div className="text-xs leading-relaxed text-white/70">
+            이 강의가 해결하는 것: 고음 발성의 원리 이해 · 실전 적용 루틴 습득
+            · 1:1 레슨으로 결과 고정
           </div>
         </div>
       </div>
