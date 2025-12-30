@@ -260,8 +260,13 @@ export default function HomePage() {
           <Reveal delay={0.3}>
             <div className="space-y-5">
               <Quote>
-                고음이 안뚫리는게 불가능한 정도입니다. 오죽하면 전액환불까지
-                당당하게 걸었을까요?
+                80대 수강생도 이해하는 총 17강으로 세분화 된 강의를 충분히
+                연습하신 후 1:1 레슨까지 진행된다면?
+                <br />
+                <strong>
+                  고음이 안뚫리는게 불가능한 정도입니다. 오죽하면 전액환불까지
+                  당당하게 걸었을까요?
+                </strong>
               </Quote>
             </div>
           </Reveal>
