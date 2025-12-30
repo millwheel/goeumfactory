@@ -61,7 +61,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-3">
                   <div className="relative h-14 w-14 overflow-hidden rounded-full border border-white/15 bg-white/10">
                     <Image
-                      src="/profile.jpg"
+                      src="/images/profile.jpg"
                       alt="대표원장 조승희"
                       fill
                       className="object-cover"
@@ -147,13 +147,6 @@ export default function HomePage() {
             />
           </Reveal>
 
-          <Reveal delay={0.25}>
-            <YouTubeEmbed
-              slug={YoutubeSlug.students}
-              title="수강생 BEFORE AFTER"
-            />
-          </Reveal>
-
           <Quote>단연 대한민국 최고의 고음강의일 겁니다.</Quote>
         </div>
       </section>
@@ -207,6 +200,13 @@ export default function HomePage() {
           <Quote>
             절대적으로 BEFORE AFTER로 결과가 증명 된 곳만이 진짜입니다.
           </Quote>
+
+          <Reveal delay={0.25}>
+            <YouTubeEmbed
+              slug={YoutubeSlug.students}
+              title="수강생 BEFORE AFTER"
+            />
+          </Reveal>
         </div>
       </section>
 
