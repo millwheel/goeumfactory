@@ -21,7 +21,7 @@ export default function HomePage() {
         <div className="space-y-8">
           <Reveal>
             <div className="text-center mb-6 md:mb-10">
-              <h1 className="text-3xl font-black tracking-tight md:text-5xl">
+              <h1 className="text-2xl font-black tracking-tight md:text-5xl">
                 대한민국에서 가장 쉬운 고음뚫기
               </h1>
             </div>
