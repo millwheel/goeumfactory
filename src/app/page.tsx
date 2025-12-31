@@ -49,43 +49,41 @@ export default function HomePage() {
             </Reveal>
           </div>
 
-          <Reveal delay={0.2}>
-            <div className="space-y-6 pt-4">
-              <YouTubeEmbed
-                slug={YoutubeSlug.intro}
-                title="고음팩토리 소개 영상"
-              />
+          <div className="space-y-6 pt-4">
+            <YouTubeEmbed
+              slug={YoutubeSlug.intro}
+              title="고음팩토리 소개 영상"
+            />
 
-              {/* 프로필: 박스 없이 얇은 라인과 약한 배경 */}
-              <div className="border-t border-white/10 pt-5">
-                <div className="flex items-center gap-3">
-                  <div className="relative h-14 w-14 overflow-hidden rounded-full border border-white/15 bg-white/10">
-                    <Image
-                      src="/images/profile.jpg"
-                      alt="대표원장 조승희"
-                      fill
-                      className="object-cover"
-                      sizes="56px"
-                      priority={false}
-                    />
-                  </div>
-                  <div className="leading-snug">
-                    <div className="font-semibold text-white">
-                      대표원장 조승희
-                    </div>
-                    <div className="text-sm text-white/70">
-                      &#39;고음 잘뚫기&#39;로 증명된 트레이너
-                    </div>
-                  </div>
+            {/* 프로필: 박스 없이 얇은 라인과 약한 배경 */}
+            <div className="border-t border-white/10 pt-5">
+              <div className="flex items-center gap-3">
+                <div className="relative h-14 w-14 overflow-hidden rounded-full border border-white/15 bg-white/10">
+                  <Image
+                    src="/images/profile.jpg"
+                    alt="대표원장 조승희"
+                    fill
+                    className="object-cover"
+                    sizes="56px"
+                    priority={false}
+                  />
                 </div>
-
-                <div className="mt-5 text-sm leading-8 text-white/75 md:text-base">
-                  안녕하세요. 수많은 before after로 대한민국에서 고음 잘뚫기로
-                  증명된 고음팩토리 대표원장 조승희입니다.
+                <div className="leading-snug">
+                  <div className="font-semibold text-white">
+                    대표원장 조승희
+                  </div>
+                  <div className="text-sm text-white/70">
+                    &#39;고음 잘뚫기&#39;로 증명된 트레이너
+                  </div>
                 </div>
               </div>
+
+              <div className="mt-5 text-sm leading-8 text-white/75 md:text-base">
+                안녕하세요. 수많은 before after로 대한민국에서 고음 잘뚫기로
+                증명된 고음팩토리 대표원장 조승희입니다.
+              </div>
             </div>
-          </Reveal>
+          </div>
         </div>
       </section>
 
@@ -120,12 +118,10 @@ export default function HomePage() {
             />
           </Reveal>
 
-          <Reveal delay={0.15}>
-            <YouTubeEmbed
-              slug={YoutubeSlug.beforeAfter1}
-              title="흩어져 날아가 BEFORE AFTER"
-            />
-          </Reveal>
+          <YouTubeEmbed
+            slug={YoutubeSlug.beforeAfter1}
+            title="흩어져 날아가 BEFORE AFTER"
+          />
 
           <Reveal delay={0.2}>
             <ClaimRow
@@ -162,12 +158,10 @@ export default function HomePage() {
         </Reveal>
 
         <div className="mt-10 space-y-8 md:mt-12">
-          <Reveal delay={0.1}>
-            <YouTubeEmbed
-              slug={YoutubeSlug.student1eok}
-              title="1억 수강생 BEFORE AFTER"
-            />
-          </Reveal>
+          <YouTubeEmbed
+            slug={YoutubeSlug.student1eok}
+            title="1억 수강생 BEFORE AFTER"
+          />
 
           <Reveal delay={0.15}>
             <StoryBlock
@@ -201,12 +195,10 @@ export default function HomePage() {
             절대적으로 BEFORE AFTER로 결과가 증명 된 곳만이 진짜입니다.
           </Quote>
 
-          <Reveal delay={0.25}>
-            <YouTubeEmbed
-              slug={YoutubeSlug.students}
-              title="수강생 BEFORE AFTER"
-            />
-          </Reveal>
+          <YouTubeEmbed
+            slug={YoutubeSlug.students}
+            title="수강생 BEFORE AFTER"
+          />
         </div>
       </section>
 
@@ -250,26 +242,22 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.25}>
-            <YouTubeEmbed
-              slug={YoutubeSlug.senior}
-              title="80대 수강생 BEFORE AFTER"
-            />
-          </Reveal>
+          <YouTubeEmbed
+            slug={YoutubeSlug.senior}
+            title="80대 수강생 BEFORE AFTER"
+          />
 
-          <Reveal delay={0.3}>
-            <div className="space-y-5">
-              <Quote>
-                80대 수강생도 이해하는 총 17강으로 세분화 된 강의를 충분히
-                연습하신 후 1:1 레슨까지 진행된다면?
-                <br />
-                <strong>
-                  고음이 안뚫리는게 불가능한 정도입니다. 오죽하면 전액환불까지
-                  당당하게 걸었을까요?
-                </strong>
-              </Quote>
-            </div>
-          </Reveal>
+          <div className="space-y-5">
+            <Quote>
+              80대 수강생도 이해하는 총 17강으로 세분화 된 강의를 충분히
+              연습하신 후 1:1 레슨까지 진행된다면?
+              <br />
+              <strong>
+                고음이 안뚫리는게 불가능한 정도입니다. 오죽하면 전액환불까지
+                당당하게 걸었을까요?
+              </strong>
+            </Quote>
+          </div>
         </div>
       </section>
 
@@ -325,9 +313,7 @@ export default function HomePage() {
           </Reveal>
 
           {/* 연락처 */}
-          <Reveal delay={0.15}>
-            <Contact />
-          </Reveal>
+          <Contact />
         </div>
       </section>
 
